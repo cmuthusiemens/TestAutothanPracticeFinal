@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="web.tests.TC_001_OpenWebsite"/>
+      <class name="web.tests.TC_002_SearchTest"/>
+      <class name="web.tests.TC_003_OpenChannel"/>
+      <class name="web.tests.TC_004_NavigateAndChose"/>
+      <class name="web.tests.TC_006_007_ScrollToElement"/>
+      <class name="web.tests.TC_008_ClickVideo"/>
+       <class name="web.tests.TC_009_SkipAdAndChangeQuality"/>
+       <class name="web.tests.TC_010_GetUpNextVideosAndWriteToJSON"/>
+       <class name="web.tests.TC_005_API_GetVideoName"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
