@@ -11,6 +11,7 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<suite-xml>testng_web.xml</suite-xml>
 	</properties>
 
 
@@ -79,9 +80,7 @@
 					<version>2.22.2</version>
 					<configuration>
 						<suiteXmlFiles>
-							<suiteXmlFile>
-	                            testng_web.xml
-	                        </suiteXmlFile>
+							<suiteXmlFile>${suite-xml}</suiteXmlFile>
 						</suiteXmlFiles>
 					</configuration>
 				</plugin>

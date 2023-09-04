@@ -20,7 +20,7 @@ public class TC_011_API_UploadFile {
 
 	void testJSON1()
 	{
-File jsonDataInFile = new File(System.getProperty("user.dir")+"//OutputJSON");
+File jsonDataInFile = new File(System.getProperty("user.dir")+"//target//OutputJSON");
 		
 		    given()
 				.baseUri("")

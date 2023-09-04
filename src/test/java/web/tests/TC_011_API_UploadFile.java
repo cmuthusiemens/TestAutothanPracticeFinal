@@ -14,29 +14,18 @@ import io.restassured.http.ContentType;
 
 public class TC_011_API_UploadFile {
 
-	
 	// To print output
-	//@Test
+	// @Test
 
-	void testJSON1()
-	{
-File jsonDataInFile = new File(System.getProperty("user.dir")+"//OutputJSON");
-		
-		    given()
-				.baseUri("")
-				.contentType(ContentType.JSON)
-				.body(jsonDataInFile)
-		// WHEN
-			.when()
-				.post()
+	void testJSON1() {
+		File jsonDataInFile = new File(System.getProperty("user.dir") + "//target//OutputJSON");
+
+		given().baseUri("").contentType(ContentType.JSON).body(jsonDataInFile)
+				// WHEN
+				.when().post()
 				// THEN
-			.then()
-				.assertThat()
-				.statusCode(200)
-				.body("token", Matchers.notNullValue())
+				.then().assertThat().statusCode(200).body("token", Matchers.notNullValue())
 				.body("token.length()", Matchers.is(15));
-				
-}
-}
 
-
+	}
+}

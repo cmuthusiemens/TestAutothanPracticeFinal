@@ -85,7 +85,7 @@ public class StepInForumPage extends CommonMethodsAndAssertions {
 	        jsonObject.put("upcoming-videos", upnextvideos);
 	      
 	      try {
-	          FileWriter file = new FileWriter(System.getProperty("user.dir")+"//OutputJSON");
+	          FileWriter file = new FileWriter(System.getProperty("user.dir")+"//target//OutputJSON");
 	          file.write(jsonObject.toJSONString());
 	          file.close();
 	       } catch (IOException e) {
